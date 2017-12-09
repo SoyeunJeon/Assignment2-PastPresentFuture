@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Past Present Future</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_for_practice">Map</string>
+    <string name="title_activity_event_location">Map</string>
+    <string name="title_activity_history_map">Map</string>
+</resources>

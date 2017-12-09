@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.pastpresentfuture.EventDetail">
+
+    <TextView
+        android:id="@+id/EventNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your event :"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/colorLight"
+        android:layout_below="@id/EventNameField"/>
+
+    <TextView
+        android:id="@+id/eventDateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event date :"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/eventName"/>
+
+    <TextView
+        android:id="@+id/eventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/colorLight"
+        android:layout_below="@id/eventDateField"/>
+
+    <TextView
+        android:id="@+id/eventMemoField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add some special memo!"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/eventDate"/>
+
+    <EditText
+        android:id="@+id/eventMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/colorLight"
+        android:layout_below="@id/eventMemoField"/>
+
+    <TextView
+        android:id="@+id/eventLocationField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event location : "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/eventMemo"/>
+
+    <EditText
+        android:id="@+id/eventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/colorLight"
+        android:layout_below="@id/eventLocationField"/>
+
+    <Button
+        android:id="@+id/toMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See on map"
+        android:onClick="onClickButtonToMap"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/eventLocation"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/update"
+        android:onClick="onClickButtonSaveMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Update event detail"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
